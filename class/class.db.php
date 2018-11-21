@@ -13,7 +13,7 @@
 	define("PASSWORD", "");
 		
 	$host = $_SERVER['HTTP_HOST'];
-	define("BASE_URL", "http://".$host."/sis/");	
+	define("BASE_URL", "http://".$host."/sis/sistema-ERP/");	
 
 
 class DB{
