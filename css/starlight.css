@@ -12036,6 +12036,11 @@ textarea.parsley-success:focus {
   z-index: 1030;
   transition: all 0.2s ease-in-out;
 }
+
+.sl-logo img{
+  margin-right: 5px; margin-top: -3px
+}
+
 @media (min-width: 992px) {
   .sl-logo {
     left: 0;

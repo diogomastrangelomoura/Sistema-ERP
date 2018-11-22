@@ -1,5 +1,10 @@
-    <!-- ########## START: LEFT PANEL ########## -->
-    <div class="sl-logo"><a href=""> <img src="img/logo/logo-pequena.png"> SisConnection</a></div>
+    
+    <!-- ########## MENU ESQUERDO ########## -->
+    
+    <div class="sl-logo">
+        <a href="javascript:void(0);"> <img src="img/sistema/logo-pequena.png"> SIS-ERP <small>v1.0</small></a>
+    </div>
+    
     <div class="sl-sideleft">
       <div class="input-group input-group-search">
         <input type="search" name="search" class="form-control" placeholder="Search">
@@ -20,8 +25,7 @@
 
          ?>
 
-      </div><!-- sl-sideleft-menu -->
-
-      <br>
-    </div><!-- sl-sideleft -->
-    <!-- ########## END: LEFT PANEL ########## -->
+      </div>
+      
+    </div>
+    <!-- ########## MENU ESQUERDO ########## -->

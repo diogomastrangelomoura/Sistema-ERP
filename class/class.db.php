@@ -1,21 +1,5 @@
 <?php
 
-	@ob_start();
-	@session_start();
-
-	date_default_timezone_set('America/Sao_Paulo');
-
-
-	
-	define("HOST", "localhost");
-	define("DBNAME", "sis");
-	define("USER", "root");
-	define("PASSWORD", "");
-		
-	$host = $_SERVER['HTTP_HOST'];
-	define("BASE_URL", "http://".$host."/sis/sistema-ERP/");	
-
-
 class DB{
     private $link;
 	

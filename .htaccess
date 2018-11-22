@@ -1,0 +1,36 @@
+<IfModule mod_rewrite.c>
+    
+	#Bloquear listagem
+	Options -Indexes
+
+	Options +FollowSymLinks
+	RewriteEngine on
+
+	DefaultLanguage pt-BR
+	AddDefaultCharset UTF-8
+
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
+
+	#Errors
+	ErrorDocument 404 http://localhost/sis/Sistema-ERP/
+
+	#INICIO**************************************************************
+	RewriteRule ^home?$ home.php [L,QSA]
+	RewriteRule ^login?$ index.php [L,QSA]
+
+
+	#VIEWS**************************************************************
+
+	RewriteRule ^clientes?$ views/cadastros/cad_clientes.php [L,QSA]
+	
+	RewriteRule ^exemplo/(.*)?$ views/pasta_exemplo/arquivo_exemplo.php?id=$1 [L,QSA]	
+	RewriteRule ^exemplo/pasta_exemplo/(.*)/(.*)?$ pasta_exemplo/pasta_exemplo/arquivo_exemplo.php?id=$1&id2=$2 [L,QSA]	
+	
+
+	#CONTROLERS**************************************************************
+
+
+
+
+</IfModule>
