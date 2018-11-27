@@ -20,6 +20,7 @@ require(dirname(__FILE__)."/../config.php");
 
     <!-- Starlight CSS -->
     <link href="<?php echo CAMINHO_BASE; ?>css/starlight.css" rel="stylesheet" >
+    <link href="<?php echo CAMINHO_BASE; ?>css/custom.css" rel="stylesheet" >
   </head>
 
   <body>

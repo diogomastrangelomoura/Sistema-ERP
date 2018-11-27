@@ -1,4 +1,12 @@
 
 .fundo_index{background-image:url(../img/sistema/fundo.jpg); background-size: cover; }
 
-.letras_finas{font-weight: 300}
+.letras_finas{font-weight: 300}\
+
+.ajusta_botao{ margin-top: 20px; border: 1px solid red; }
+
+.lixeira{ margin-top: 26px }
+
+.lixeira_icon{ font-size: 2em; }
+
+.linha{width: 100%; height: 1px; background: #e9ecef}

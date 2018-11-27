@@ -5,8 +5,8 @@
       <!-- TITULOS DA PÁGINA -->
       <nav class="breadcrumb sl-breadcrumb">
         <a class="breadcrumb-item" href="home">HOME</a>        
-        <a href="clientes" class="breadcrumb-item" href="home">LISTAGEM DE CLIENTES</a>        
-        <span class="breadcrumb-item active">CADASTRO DE CLIENTE</span>
+        <a href="fornecedores" class="breadcrumb-item" href="home">LISTAGEM DE FORNECEDORES</a>        
+        <span class="breadcrumb-item active">CADASTRO DE FORNECEDOR</span>
       </nav>
       <!-- TITULOS DA PÁGINA -->
 
@@ -14,7 +14,7 @@
         <div class="sl-page-title">
           
           <div class="card pd-10 pd-sm-40">
-          <h6 class="card-body-title">Cadastro de Cliente</h6>
+          <h6 class="card-body-title">Cadastro de Fornecedor</h6>
           <p class="mg-b-20 mg-sm-b-30">Campos com o simbolo <span class="tx-danger">*</span> são obrigatórios</p>
 
           <br>
@@ -22,10 +22,17 @@
             <div class="row mg-b-25">
 
 
-              <div class="col-lg-8 col-sx-12">
+              <div class="col-lg-7 col-sx-12">
                 <div class="form-group">
                   <label class="form-control-label">Nome: <span class="tx-danger">*</span></label>
                   <input class="form-control" type="text" name="nome" value="" placeholder="Digite o nome completo">
+                </div>
+              </div><!-- col-4 -->
+
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="form-control-label">CNPJ: <span class="tx-danger">*</span></label>
+                  <input class="form-control" type="text" name="text" value="" placeholder="">
                 </div>
               </div><!-- col-4 -->
 
@@ -39,16 +46,6 @@
                 </div>
               </div><!-- col-4 -->
 
-
-              <div class="col-lg-2">
-                <div class="form-group mg-b-10-force">
-                  <label class="form-control-label">Status:</label>
-                  <select class="form-control select2" data-placeholder="Choose country">
-                    <option value="USA">Ativo</option>
-                    <option value="UK">Desativado</option>
-                  </select>
-                </div>
-              </div><!-- col-4 -->
 
               <div class="col-lg-3">
                 <div class="form-group">
@@ -94,26 +91,7 @@
               </div><!-- col-8 -->
 
 
-              <div class="col-lg-3">
-                <div class="form-group mg-b-10-force">
-                  <label class="form-control-label">Data Fundação</label>
-                  <input class="form-control" type="date" name="" value="" placeholder="">
-                </div>
-              </div><!-- col-8 -->
-
-              <div class="col-lg-2">
-                <div class="form-group mg-b-10-force">
-                  <label class="form-control-label">Telefone Comercial</label>
-                  <input class="form-control" type="text" name="" value="" placeholder="">
-                </div>
-              </div><!-- col-8 -->
-
-              <div class="col-lg-2">
-                <div class="form-group mg-b-10-force">
-                  <label class="form-control-label">Telefone Celular</label>
-                  <input class="form-control" type="text" name="" value="" placeholder="">
-                </div>
-              </div><!-- col-8 -->
+          
 
 
             <div class="col-lg-12">
@@ -123,7 +101,7 @@
               <div class="card-header" role="tab" id="headingOne">
                 <h6 class="mg-b-0">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="tx-gray-900 transition">
-                    Contatos do cliente
+                    Informar contato para este fornecedor
                   </a>
                 </h6>
               </div><!-- card-header -->
@@ -134,25 +112,23 @@
                    <div class="row">
 
                       <div class="col-md-3 mb-3">
-                        <label for="firstName">Nome</label>
+                        <label for="firstName">Fone comercial</label>
                         <input type="text" class="form-control" name="" placeholder="" value="">
                       </div>
 
+
+                      <div class="col-md-3 mb-3">
+                          <label for="lastName">Celular</label>
+                          <input type="text" class="form-control" name="" placeholder="" value="">
+                        </div>
 
                       <div class="col-md-3 mb-3">
                         <label for="lastName">e-mail</label>
                         <input type="text" class="form-control" name=""  placeholder="" value="">
                       </div>
 
-
-                       <div class="col-md-3 mb-3">
-                          <label for="lastName">Celular</label>
-                          <input type="text" class="form-control" name="" placeholder="" value="">
-                        </div>
-
-
                         <div class="col-md-3 mb-3">
-                          <label for="lastName">Cargo</label>
+                          <label for="lastName">Contato</label>
                           <input type="text" class="form-control" name="" placeholder="" value="">
                         </div>
 
@@ -166,7 +142,7 @@
               <div class="card-header" role="tab" id="headingTwo">
                 <h6 class="mg-b-0">
                   <a class="collapsed transition" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Endereço do cliente
+                    Endereço 
                   </a>
                 </h6>
               </div>
@@ -246,7 +222,7 @@
                 </div>
 
                 <div class="col-md-6 pull-right"> 
-                  <a href="" class="btn btn-warning mg-r-5 pull-right">Salvar este cliente e adicionar outro</a>
+                  <a href="" class="btn btn-warning mg-r-5 pull-right">Salvar este fornecedor e adicionar outro</a>
                 </div>
               </div>
           </div>
