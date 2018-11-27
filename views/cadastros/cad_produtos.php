@@ -21,7 +21,7 @@
           <div class="form-layout">
             <div class="row mg-b-25">
 
-
+              <form>
               <div class="col-lg-6 col-sx-12">
                 <div class="form-group">
                   <label class="form-control-label">Nome do produto: <span class="tx-danger">*</span></label>
@@ -203,7 +203,7 @@
               </div>
           </div>
 
-           
+          </form>
 
 
           </div>
