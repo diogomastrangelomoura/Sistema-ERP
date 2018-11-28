@@ -7,7 +7,7 @@
     
     <div class="sl-sideleft">
       <div class="input-group input-group-search">
-        <input type="search" name="search" class="form-control" placeholder="Search">
+        <input type="search" name="search" class="form-control" placeholder="PESQUISA">
         <span class="input-group-btn">
           <button class="btn"><i class="fa fa-search"></i></button>
         </span><!-- input-group-btn -->
@@ -29,3 +29,5 @@
       
     </div>
     <!-- ########## MENU ESQUERDO ########## -->
+
+  

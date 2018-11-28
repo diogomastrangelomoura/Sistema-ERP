@@ -18,5 +18,11 @@ define("PASSWORD", "");
 require(ROOT_DIR."class/class.db.php");
 require(ROOT_DIR."class/class.seguranca.php");
 require(ROOT_DIR."class/class.menu.php");
+require(ROOT_DIR."class/class.avisos.php");
+require(ROOT_DIR."class/class.pesquisas.php");
+
+//INSTANCIA PESQUISA
+$pesquisas = new Pesquisas(); 
+
 
 ?>

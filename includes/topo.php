@@ -21,9 +21,14 @@ require(dirname(__FILE__)."/../config.php");
     <!-- Starlight CSS -->
     <link href="<?php echo CAMINHO_BASE; ?>css/starlight.css" rel="stylesheet" >
     <link href="<?php echo CAMINHO_BASE; ?>css/custom.css" rel="stylesheet" >
+
+    <base href="<?php echo CAMINHO_BASE; ?>">
+    
   </head>
 
   <body>
+
+
 
 
   <?php
@@ -31,3 +36,16 @@ require(dirname(__FILE__)."/../config.php");
     require'barra_superior.php'; 
     require'menu_lateral_direito.php'; 
   ?>  
+
+
+  <div class="sl-mainpanel">
+
+
+
+    <?php 
+      $avisos = new AvisosSistema(); 
+      $exibe_avisos = $avisos->ExibeAvisos();
+    ?>
+    
+
+   

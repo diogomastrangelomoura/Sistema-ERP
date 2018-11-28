@@ -11,10 +11,10 @@ class MENU{
 		$sel = $db->select("SELECT * FROM sis_menu ORDER BY id_menu");
         while($ln = $db->expand($sel)){
 
-        echo' <a href="'.$ln['link_menu'].'" class="sl-menu-link">';
+        echo' <a href="'.CAMINHO_BASE.$ln['link_menu'].'" class="sl-menu-link">';
          echo' <div class="sl-menu-item">';
            echo' '.$ln['icone_menu'].'';
-            echo'<span class="menu-item-label">'.$ln['nome_menu'].'</span>';
+            echo'<span class="menu-item-label upper">'.$ln['nome_menu'].'</span>';
              $this->ConstroiSubmenu($ln['id_menu'],1);
          echo' </div>';
        	echo' </a>';	
@@ -48,7 +48,7 @@ class MENU{
 
 				echo'<ul class="sl-menu-sub nav flex-column">';
 		        while($ln = $db->expand($sel)){
-		          echo'<li class="nav-item"><a href="'.$ln['link_submenu'].'" class="nav-link">'.$ln['nome_submenu'].'</a></li>';
+		          echo'<li class="nav-item upper"><a href="'.CAMINHO_BASE.$ln['link_submenu'].'" class="nav-link">'.$ln['nome_submenu'].'</a></li>';
 		        }
 		        echo'</ul>';
 	        }

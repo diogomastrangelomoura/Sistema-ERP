@@ -1,6 +1,8 @@
 <?php require'includes/topo.php';  ?>
 
-<div class="sl-mainpanel">
+
+
+  
       
       <!-- TITULOS DA PÁGINA -->
       <nav class="breadcrumb sl-breadcrumb">
@@ -19,7 +21,7 @@
       </div>
 
 
-</div>
+
     
 
 

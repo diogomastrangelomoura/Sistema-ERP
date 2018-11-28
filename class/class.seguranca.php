@@ -5,24 +5,27 @@ session_cache_expire(180000);
 date_default_timezone_set('America/Sao_Paulo');
 
 
+
 $db = new DB();
 
 	foreach($_POST as $nome_campo => $valor){	
-		
-		
-			@$comando = "$" . $nome_campo . '="' . $valor . '";';
-			@eval($comando);
 				
-	
-
+		@$comando = "$" . $nome_campo . '="' . $valor . '";';
+		@eval($comando);
+				
 	}
 
-
-//Recebe as variaveis do GET - PERMITINDO APENAS NUMEROS
 	foreach($_GET as $nome_campo => $valor){	
-		$comando = "\$" . $nome_campo . "='" . $valor . "';";
-		eval($comando);
+		@$comando = "\$" . $nome_campo . "='" . $valor . "';";
+		@eval($comando);
 	}
+
+
+
+
+
+///CASO NAO VENHA ID O DEFINE COMO VAZIO/////
+if(!isset($id)){$id='';}
 
 
 function valores($valor){

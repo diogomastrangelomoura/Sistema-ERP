@@ -12,8 +12,7 @@
 	RewriteCond %{SCRIPT_FILENAME} !-d
 	RewriteCond %{SCRIPT_FILENAME} !-f
 
-	#Errors
-	ErrorDocument 404 http://localhost/sis/Sistema-ERP/
+	
 
 	#INICIO**************************************************************
 	RewriteRule ^home?$ home.php [L,QSA]
@@ -22,21 +21,22 @@
 
 	#VIEWS**************************************************************
 
-	RewriteRule ^clientes?$ views/lista/lista_clientes.php [L,QSA]
-	RewriteRule ^cad_clientes?$ views/cadastros/cad_clientes.php [L,QSA]
+	RewriteRule ^clientes?$ views/cadastros/listagem/lista_clientes.php [L,QSA]
+	RewriteRule ^cadastros/clientes/novo?$ views/cadastros/forms/cad_clientes.php [L,QSA]
 
+	RewriteRule ^fornecedores?$ views/cadastros/listagem/lista_fornecedores.php [L,QSA]
+	RewriteRule ^cadastros/fornecedores/novo?$ views/cadastros/forms/cad_fornecedores.php [L,QSA]
 
-	RewriteRule ^fornecedores?$ views/lista/lista_fornecedores.php [L,QSA]
-	RewriteRule ^cad_fornecedores?$ views/cadastros/cad_fornecedores.php [L,QSA]
+	RewriteRule ^produtos?$ views/cadastros/listagem/lista_produtos.php [L,QSA]
+	RewriteRule ^cadastros/produtos/novo?$ views/cadastros/forms/cad_produtos.php [L,QSA]
 
-	RewriteRule ^produtos?$ views/lista/lista_produtos.php [L,QSA]
-	RewriteRule ^cad_produtos?$ views/cadastros/cad_produtos.php [L,QSA]
+	RewriteRule ^categorias?$ views/cadastros/listagem/lista_categorias.php [L,QSA]
+	RewriteRule ^cadastros/categorias/novo?$ views/cadastros/forms/cad_categorias.php [L,QSA]
+	RewriteRule ^cadastros/categorias/save?$ controlers/cadastros/salva_categoria.php [L,QSA]
+	RewriteRule ^cadastros/categorias/edita/(.*)?$ views/cadastros/forms/cad_categorias.php?id=$1 [L,QSA]
 
-	RewriteRule ^categorias?$ views/lista/lista_categorias.php [L,QSA]
-	RewriteRule ^cad_categorias?$ views/cadastros/cad_categorias.php [L,QSA]
-
-	RewriteRule ^servicos?$ views/lista/lista_servicos.php [L,QSA]
-	RewriteRule ^cad_servicos?$ views/cadastros/cad_servicos.php [L,QSA]
+	RewriteRule ^servicos?$ views/cadastros/listagem/lista_servicos.php [L,QSA]
+	RewriteRule ^cadastros/servicos/novo?$ views/cadastros/forms/cad_servicos.php [L,QSA]
 	
 	RewriteRule ^exemplo/(.*)?$ views/pasta_exemplo/arquivo_exemplo.php?id=$1 [L,QSA]	
 	RewriteRule ^exemplo/pasta_exemplo/(.*)/(.*)?$ pasta_exemplo/pasta_exemplo/arquivo_exemplo.php?id=$1&id2=$2 [L,QSA]	

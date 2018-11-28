@@ -8506,9 +8506,9 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .card-body-title {
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: #2b333e;
 }
 
